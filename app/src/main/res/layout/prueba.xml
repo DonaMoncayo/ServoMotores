@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="466dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp">
+
+            <!-- Contenido de la primera sección -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Servo Motor 1"
+                android:textAlignment="center"
+                android:textColor="#17A589"
+                android:textSize="40sp" />
+
+            <SeekBar
+                android:id="@+id/xsb1"
+                android:layout_width="200dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-100dp"
+                android:indeterminate="false"
+                android:max="180"
+                android:progress="0"
+                android:progressDrawable="@drawable/seekbar_background"
+                android:rotation="90"
+                android:thumb="@drawable/thumb" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="393dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="466dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Contenido de la segunda sección -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Servo Motor 2"
+                android:textAlignment="center"
+                android:textColor="#17A589"
+                android:textSize="40sp" />
+
+            <!-- Resto del contenido de la segunda sección -->
+            <!-- ... -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_marginTop="200dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp">
+
+            <!-- Contenido de la tercera sección -->
+            <!-- ... -->
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
